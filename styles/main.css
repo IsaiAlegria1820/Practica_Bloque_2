@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,500;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+ font-family: "Epilogue",system-ui;
+}
+
+a{
+    color: hsl(0, 0%, 41%);
+    text-decoration: none;
+}
+button{
+    border: 0;
+    font-family: "Epilogue",system-ui;
+}
+img{
+    vertical-align: center;
+}
+
+/*estilos generales*/
+.row{
+    display: flex;
+}
+
+.grid{
+    display: grid;
+    align-items: center;
+}
+.col-2{
+    grid-template-columns: repeat(2, 1fr);
+}
+.items-center{
+    align-items: center;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.gap-xs{
+    gap: 0.5rem;
+}
+
+.gap-sm{
+    gap: 1rem;
+}
+
+.gap-md{
+    gap: 3rem;
+}   
+
+.gap-lg{    
+    gap: 6rem;    
+}
+
+.btn{
+    padding: 0.6rem 1.4rem;
+    transition: 200ms ease-in-out;
+    transition-property: color;
+}
+.btn:hover{
+    color:black;
+}
+
+.btn-border{
+    border: 1px solid hsl(0, 0%, 41%);
+    border-radius: 12px;
+    transition-property: color,border;
+}
+
+.btn-border:hover{
+    border: 1px solid black;
+}
+
+.w-full{
+    width: 100%;
+ }
+
+.btn-main{
+    padding: 0.9rem 1.8rem;
+    background: black;
+    color: white;
+    border-radius: 12px;
+    font-size: 1.1em;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: 200ms background ease-in-out, 200ms color ease-in-out, 200ms border ease-in-out;
+}
+
+.btn-main:hover{
+    background: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.my-4{
+    margin:4rem 0;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.p-relative{
+    position: relative;
+}
+/*estilos especificos*/
+header, main {
+    padding: 2rem 3rem;
+}
+
+article h2{
+    font-size: 4em;
+    line-height: 4.5rem;
+}
+
+article p{
+    color: hsl(0, 0%, 41%);
+}
+
+.main-menu a{
+    transition: 200ms color ease-in-out;
+}
+.main-menu a:hover{
+    color: black;
+}
+
+.menu-card{
+    position: absolute;
+    top: 2rem;
+    left: 50%;
+    transform: translate(-50%);
+    background: white;
+    border-radius: 12px;
+    display: none;
+    gap: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0px 0px 16px 4px rgba(0,0,0,0.1);
+    width: 5.5rem;
+    text-align: center;
+}
+
+.menu-card a{
+    display: block;
+    
+}
+
+.menu-active:hover + .menu-card{
+    display: grid;
+}
